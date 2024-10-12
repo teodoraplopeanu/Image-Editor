@@ -15,49 +15,49 @@ OA NetPBM image contains:
 
 ## Features & Commands
 
-## LOAD < fisier >
+### LOAD < fisier >
 
 Loads a PGM or PPM image file into memory. If an image is already loaded, it frees the memory before loading the new image. Supports text or binary files based on the magic number.
 Success: Loaded <filename>
 Failure: Failed to load <filename>
 
-## SELECT < x1 > < y1 > < x2 > < y2 >
+### SELECT < x1 > < y1 > < x2 > < y2 >
 
 Selects a region of the image for further operations. If invalid coordinates are provided, it displays: Invalid set of coordinates.
 
 
-## SELECT ALL
+### SELECT ALL
 
 Resets the selection to cover the entire image.
 
-## HISTOGRAM < x > < y >
+### HISTOGRAM < x > < y >
 
 Displays the histogram of the grayscale image using x stars and y bins.
 
 
-## EQUALIZE
+### EQUALIZE
 
 Equalizes a grayscale image to improve its contrast.
 
 
-## ROTATE < angle >
+### ROTATE < angle >
 
 Rotates the selected area by a given angle (multiple of 90 degrees).
 
 
- ## CROP
+ ### CROP
  Crops the image to the selected area.
 
 
-## APPLY < PARAMETER >
+### APPLY < PARAMETER >
 
 Applies a filter (EDGE, SHARPEN, BLUR, or GAUSSIAN_BLUR) to the image. Only applicable to color images.
 
 
-## SAVE < file_name > [ascii]
+### SAVE < file_name > [ascii]
 
 Saves the current image in either text or binary format based on the ascii parameter.
 
-## EXIT
+### EXIT
 
  Frees all resources and exits the program.
