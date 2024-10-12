@@ -15,7 +15,7 @@ OA NetPBM image contains:
 
 ## Features & Commands
 
-### LOAD < fisier >
+### LOAD < file >
 
 Loads a PGM or PPM image file into memory. If an image is already loaded, it frees the memory before loading the new image. Supports text or binary files based on the magic number.
 Success: Loaded <filename>
